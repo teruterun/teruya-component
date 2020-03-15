@@ -1,11 +1,18 @@
-.teruya-button{
-    cursor: pointer;
-    color: white;
-    background-color: #3320db;
-  
-    i {
-        position: relative;
-        font-size: 16px;
-        margin: 0 4px;
-    }
+.teruya-button {
+  cursor: pointer;
+  color: white;
+  background-color: #3320db;
+
+  i {
+    position: relative;
+    font-size: 16px;
+    margin: 0 4px;
+  }
+}
+
+.teruya-icon-button {
+  cursor: pointer;
+  .icon {
+    position: relative;
+  }
 }
