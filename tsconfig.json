@@ -18,6 +18,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "teruya-component": [
+        "dist/teruya-component"
+      ],
+      "teruya-component/*": [
+        "dist/teruya-component/*"
+      ]
+    }
   }
 }

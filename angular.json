@@ -119,6 +119,41 @@
           }
         }
       }
+    },
+    "teruya-component": {
+      "projectType": "library",
+      "root": "projects/teruya-component",
+      "sourceRoot": "projects/teruya-component/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/teruya-component/tsconfig.lib.json",
+            "project": "projects/teruya-component/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/teruya-component/src/test.ts",
+            "tsConfig": "projects/teruya-component/tsconfig.spec.json",
+            "karmaConfig": "projects/teruya-component/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/teruya-component/tsconfig.lib.json",
+              "projects/teruya-component/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "teruya-component-lib"
 }
